@@ -7,12 +7,12 @@ const state = {
 
 const mutations = {
   logout(state) {
-    console.log("logging out ", user);
+    console.log("logging out ", state.user);
     state.loggedIn = false;
     state.user = null;
 
     // remove the user email if we are logged out
-    appSettings.removeString("AUTH-INFO");
+    appSettings.remove("AUTH-INFO");
   },
   login(state, { user }) {
     console.log("logging in ", user);
@@ -24,6 +24,9 @@ const mutations = {
   }
 };
 
+//
+// Actions are asynchronous, mutations are not!!
+//
 const actions = {
   /**
    *
