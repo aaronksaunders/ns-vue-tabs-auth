@@ -1,6 +1,8 @@
-# NativeScript-Vue Application
+# NativeScript-Vue Application Using Tabs & Login Screen
 
 > A native application built with NativeScript-Vue
+
+Scaffolding for tab application with authentication 
 
 ## Usage
 
