@@ -1,8 +1,4 @@
 <template>
-  <Page class="page">
-    <ActionBar class="action-bar" title="Tab One">
-    </ActionBar>
-
     <StackLayout>
       <FlexboxLayout flexDirection="column" justifyContent="center">
         <Label padding="10" text="This is a Tab Component One">
@@ -12,8 +8,6 @@
         <Button class="btn" @tap="logout()" text="Logout" />
       </FlexboxLayout>
     </StackLayout>
-
-  </Page>
 </template>
 
 <script>
@@ -34,7 +28,7 @@ export default {
   methods: {
     logout() {
       this.$store.dispatch("auth/logout").then(() => {
-        this.$router.replace("/login")
+        this.$router.replace("login")
       });
     }
   }

@@ -1,5 +1,4 @@
 <template>
-
   <StackLayout>
     <FlexboxLayout justifyContent="center" flexDirection="column">
       <Label padding="10">
@@ -8,7 +7,6 @@
       <Button class="btn" @tap="$router.push('/tab2-details')" text="Details" />
     </FlexboxLayout>
   </StackLayout>
-
 </template>
 
 <script>

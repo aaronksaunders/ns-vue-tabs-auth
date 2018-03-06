@@ -1,7 +1,9 @@
 
 <template>
   <Page class="page">
-    <ActionBar class="action-bar" title="Tab Test" />
+      <ActionBar :title="$route.path">
+        <NavigationButton hidden="true" text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
+      </ActionBar>
     <TabView :selectedIndex="selectedIndex">
       <TabViewItem title="Tab 1">
         <tab-component1></tab-component1>
