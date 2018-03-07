@@ -1,8 +1,8 @@
 
 <template>
   <Page class="page">
-      <ActionBar :title="$route.path">
-        <NavigationButton hidden="true" text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
+      <ActionBar>
+        <NavigationButton visibility="collapsed" />
       </ActionBar>
     <TabView :selectedIndex="selectedIndex">
       <TabViewItem title="Tab 1">

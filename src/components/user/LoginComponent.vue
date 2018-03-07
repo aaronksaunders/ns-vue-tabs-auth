@@ -31,7 +31,7 @@ export default {
         console.log(this.$store.state.auth.loggedIn);
         if (this.$store.state.auth.loggedIn) {
           console.log("logged in...", user);
-          this.$router.replace("home");
+          this.$router.replace("/home");
         }
       });
     }
