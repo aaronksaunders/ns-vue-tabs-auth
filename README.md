@@ -29,3 +29,6 @@ npm run clean
 > When invoking the various npm scripts, omitting the platform will attempt to launch `tns` for both platforms, which will only work in a properly configured OSX environment.
 
 For detailed instructions, see https://github.com/nativescript-vue/vue-cli-template
+
+### Using FontAwesome in your tabs
+https://play.nativescript.org/?template=play-vue&id=qDbPGS&v=16
